@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de compras</title>
+    <link rel="stylesheet" href="CSS/style.css">    
 </head>
 <body>
 
-    <div id="container">
+    <div class ="container">
 
         <h2>Lista de Compras</h2>
     
         <select id="produto" onchange="checkOutro()">
     
             <option value="">Selecione um Produto</option>
+             
     
             <option value="Arroz">Arroz</option>
     
@@ -40,10 +42,13 @@
         </select>
 
            <input type="text" id="outroProduto" placeholder="Digite o Produto" style="display: none;">
+           <br/>
     
            <input type="number" id="quantidade" placeholder="Quantidade">
+           <br/>
     
            <input type="number" id="preco" placeholder="Preço Unitário">
+           <br/>    
     
            <button onclick="adicionarItem()">Adicionar</button>
     
@@ -59,7 +64,7 @@
     
            <th>Total</th>
     
-           <th>Ação</th>
+           
     
             </tr>
     
@@ -71,7 +76,7 @@
      
     <script>
 
-        function checkOutro() {
+        function checkOutro() { 
     
             var select = document.getElementById("produto");
     
