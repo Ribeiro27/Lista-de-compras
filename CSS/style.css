@@ -50,6 +50,9 @@ button{
     cursor: pointer;
     float: right;
     
-    
-    
+   
+}
+
+button:hover{
+    transform: scale(1.1);
 }
