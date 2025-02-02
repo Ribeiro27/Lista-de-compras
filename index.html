@@ -35,7 +35,7 @@
     
             <option value="Pasta de dente">Pasta de dente</option>
     
-            <option value="Açucar">Açucar</option>
+            <option value="Açucar">Café</option>
     
             <option value="Outro">Outro</option>
 
@@ -44,10 +44,10 @@
            <input type="text" id="outroProduto" placeholder="Digite o Produto" style="display: none;">
            <br/>
     
-           <input type="number" id="quantidade" placeholder="Quantidade">
+           <input type="number" id="quantidade" placeholder="Quantidade" min="1">
            <br/>
     
-           <input type="number" id="preco" placeholder="Preço Unitário">
+           <input type="number" id="preco" placeholder="Preço Unitário"step ="0.01" min="0.01">
            <br/>    
     
            <button onclick="adicionarItem()">Adicionar</button>
@@ -70,7 +70,7 @@
     
         </table>
     
-        <div id="total"></div>
+        <div id="total"> Total: R$ 0.00</div>
     
     </div>
      
